@@ -10,7 +10,7 @@ cask "exit-sentinel" do
   desc "Private split-route egress monitor with WebDAV sync"
   homepage "https://github.com/melotusme/exit-sentinel"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
   depends_on arch: :arm64
   depends_on formula: "gh"
 
