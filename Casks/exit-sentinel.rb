@@ -1,8 +1,8 @@
 require_relative "../lib/private_release_download_strategy"
 
 cask "exit-sentinel" do
-  version "0.3.3"
-  sha256 "a244b9617b3ed1f33ec14806c10b3a6c142c609093f97a6f405f10271005cae1"
+  version "0.4.0"
+  sha256 "8743d30d95752fe2e476a048f907f75a289a0d8b21ab61ed74bace04e35f15d2"
 
   url "https://github.com/melotusme/exit-sentinel-releases/releases/download/v#{version}/Exit.Sentinel.app.tar.gz",
       using: ExitSentinelPrivateDownloadStrategy
