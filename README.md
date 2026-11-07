@@ -1,19 +1,13 @@
-# Exit Sentinel private Homebrew tap
+# Exit Sentinel Homebrew tap
 
-Apple Silicon macOS only. Windows installer: https://github.com/melotusme/exit-sentinel-releases/releases/latest
+Apple Silicon macOS only. Windows and Linux packages: https://github.com/melotusme/exit-sentinel-releases/releases/latest
 
 ```sh
-brew install gh
-gh auth login
-gh auth setup-git
-brew tap melotusme/exit-sentinel https://github.com/melotusme/homebrew-exit-sentinel.git
-brew trust --cask melotusme/exit-sentinel/exit-sentinel
+brew tap melotusme/exit-sentinel
 brew install --cask melotusme/exit-sentinel/exit-sentinel
 ```
 
-The GitHub account must have read access to this tap and `exit-sentinel-releases`. Download uses the local gh session without embedding tokens. The cask pins a release and verifies SHA-256. macOS uses ad-hoc signing, not Developer ID notarization.
-
-Update: `brew update` then `brew upgrade --cask melotusme/exit-sentinel/exit-sentinel`.
+The cask pins a release and verifies SHA-256. macOS uses ad-hoc signing, not Developer ID notarization. The app updates itself; you can also run `brew update` then `brew upgrade --cask melotusme/exit-sentinel/exit-sentinel`.
 
 Maintainer: run `python3 scripts/update-cask.py` after publishing a new cross-platform release, review the cask diff and commit it.
 
