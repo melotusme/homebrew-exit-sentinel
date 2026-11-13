@@ -1,6 +1,6 @@
 cask "exit-sentinel" do
-  version "0.7.3"
-  sha256 "570b3ae92f0f367955995bb032f65ba7244abf7325aa2d57116e88a4343f400d"
+  version "0.7.4"
+  sha256 "87ae90c2dd9f19fd67da020c96524ac8dc7996af7135cf98595bb51d127f6dfa"
 
   url "https://github.com/melotusme/exit-sentinel-releases/releases/download/v#{version}/Exit.Sentinel.app.tar.gz"
   name "Exit Sentinel"
